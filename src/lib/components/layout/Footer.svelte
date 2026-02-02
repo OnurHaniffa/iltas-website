@@ -1,7 +1,7 @@
 <script lang="ts">
 	const pageLinks = [
 		{ href: '/', label: 'Ana Sayfa' },
-		{ href: '/hakkimizda', label: 'Hakkimizda' },
+		{ href: '/hakkimizda', label: 'Hakkımızda' },
 		{ href: '/hizmetlerimiz', label: 'Hizmetlerimiz' },
 		{ href: '/projeler', label: 'Projeler' }
 	];
@@ -9,7 +9,7 @@
 	const contactLinks = [
 		{ href: 'mailto:info@iltasmakine.com', label: 'info@iltasmakine.com' },
 		{ href: 'tel:+905545504450', label: '+90 554 550 4450' },
-		{ href: '#', label: 'Isparta, Turkiye' }
+		{ href: 'https://maps.google.com/?q=Sanayi+Mah+3210+Sk+No:10+Isparta+Turkey', label: 'Isparta, Türkiye' }
 	];
 </script>
 
@@ -32,11 +32,11 @@
 				<span class="w-[10px] h-[10px] rounded-full bg-[var(--iltas-green)] transition-transform duration-300 group-hover:scale-150 group-hover:animate-pulse-soft"></span>
 			</a>
 			<p class="text-sm md:text-[15px] text-[var(--iltas-gray-light)] leading-[1.6] max-w-[280px]">
-				Boylama Sistemlerinde Cozum Ortaginiz
+				Boylama Sistemlerinde Çözüm Ortağınız
 			</p>
 			<div class="flex flex-col gap-1 text-sm text-[var(--iltas-gray-light)]">
 				<span>Sanayi mah. 3210 sk. No:10</span>
-				<span>Isparta/Merkez, Turkiye</span>
+				<span>Isparta / Türkiye</span>
 			</div>
 			<span class="hidden md:block text-[80px] lg:text-[100px] font-black text-[var(--iltas-dark-light)] tracking-[-4px] opacity-30 select-none">
 				ILTAS
@@ -61,12 +61,13 @@
 
 			<!-- Contact -->
 			<div class="flex flex-col gap-3 md:gap-[14px]">
-				<span class="text-[13px] font-bold text-white tracking-[0.5px]">Iletisim</span>
+				<span class="text-[13px] font-bold text-white tracking-[0.5px]">İletişim</span>
 				{#each contactLinks as link, i}
 					<a
 						href={link.href}
 						class="text-sm text-[var(--iltas-gray-light)] hover:text-white hover:translate-x-1 transition-all duration-300"
 						style="transition-delay: {i * 50}ms"
+						{...link.href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {}}
 					>
 						{link.label}
 					</a>
@@ -75,10 +76,10 @@
 
 			<!-- Working Hours & Social -->
 			<div class="flex flex-col gap-3 md:gap-[14px] col-span-2 md:col-span-1">
-				<span class="text-[13px] font-bold text-white tracking-[0.5px]">Calisma Saatleri</span>
+				<span class="text-[13px] font-bold text-white tracking-[0.5px]">Çalışma Saatleri</span>
 				<span class="text-sm text-[var(--iltas-gray-light)]">Pazartesi - Cuma</span>
 				<span class="text-sm text-[var(--iltas-gray-light)]">09:00 - 18:00</span>
-				<span class="text-sm text-[var(--iltas-gray-light)]">Haftasonu kapali</span>
+				<span class="text-sm text-[var(--iltas-gray-light)]">Hafta sonu kapalı</span>
 
 				<span class="text-[13px] font-bold text-white tracking-[0.5px] mt-4">Sosyal Medya</span>
 				<div class="flex gap-4">
@@ -104,10 +105,10 @@
 
 	<!-- Footer Bottom -->
 	<div class="flex flex-col md:flex-row items-center justify-between gap-4 px-5 md:px-[50px] py-6 md:py-10">
-		<span class="text-[13px] text-[var(--iltas-gray)] text-center md:text-left">© 2025 ILTAS Boylama ve Hasat Sistemleri. Tum haklari saklidir.</span>
+		<span class="text-[13px] text-[var(--iltas-gray)] text-center md:text-left">© {new Date().getFullYear()} ILTAS Boylama ve Hasat Sistemleri. Tüm hakları saklıdır.</span>
 		<div class="flex gap-6">
-			<a href="#" class="text-[13px] text-[var(--iltas-gray)] hover:text-white transition-colors duration-300">Gizlilik Politikasi</a>
-			<a href="#" class="text-[13px] text-[var(--iltas-gray)] hover:text-white transition-colors duration-300">Kullanim Sartlari</a>
+			<a href="#" class="text-[13px] text-[var(--iltas-gray)] hover:text-white transition-colors duration-300">Gizlilik Politikası</a>
+			<a href="#" class="text-[13px] text-[var(--iltas-gray)] hover:text-white transition-colors duration-300">Kullanım Şartları</a>
 		</div>
 	</div>
 </footer>

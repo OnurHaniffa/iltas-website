@@ -7,8 +7,8 @@
 <svelte:head>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-	<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-	<title>ILTAS - Boylama Sistemlerinde Guvenceli Cozumler</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+	<title>ILTAS - Boylama Sistemlerinde Güvenceli Çözümler</title>
 </svelte:head>
 
 <div class="h-full font-inter">

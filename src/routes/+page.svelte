@@ -9,9 +9,9 @@
 
 	const stats = [
 		{ value: 30, suffix: '+', label: 'Tamamlanan Proje', highlight: true },
-		{ value: 2020, suffix: '', label: 'Kurulus Yili', highlight: false },
+		{ value: 2020, suffix: '', label: 'Kuruluş Yılı', highlight: false },
 		{ value: 6, suffix: '+', label: 'Referans', highlight: false },
-		{ value: 3, suffix: '', label: 'Hizmet Alani', highlight: false }
+		{ value: 3, suffix: '', label: 'Hizmet Alanı', highlight: false }
 	];
 
 	function animateNumbers() {
@@ -78,17 +78,17 @@
 		{
 			image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80',
 			title: 'OZGOKTASLAR SHD',
-			location: 'Turkiye'
+			location: 'Türkiye'
 		},
 		{
 			image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80',
 			title: 'SADE TARIM',
-			location: 'Nigde, Turkiye'
+			location: 'Niğde, Türkiye'
 		},
 		{
 			image: '/images/pehlivanlar-shd.jpeg',
 			title: 'PEHLIVANLAR SHD',
-			location: 'Turkiye'
+			location: 'Türkiye'
 		}
 	];
 
@@ -129,6 +129,21 @@
 		return visibleSections.has(id);
 	}
 </script>
+
+<svelte:head>
+	<title>ILTAS - Meyve & Sebze Boylama Sistemleri | Güvenilir Çözüm Ortağınız</title>
+	<meta name="description" content="ILTAS, meyve ve sebze boylama hatlarında taşıma, bakım, revizyon ve yeni makine imalatı çözümleri sunar. 2020'den beri güvenilir çözüm ortağınız." />
+	<meta property="og:title" content="ILTAS - Meyve & Sebze Boylama Sistemleri | Güvenilir Çözüm Ortağınız" />
+	<meta property="og:description" content="ILTAS, meyve ve sebze boylama hatlarında taşıma, bakım, revizyon ve yeni makine imalatı çözümleri sunar. 2020'den beri güvenilir çözüm ortağınız." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://iltas-website.vercel.app/" />
+	<meta property="og:locale" content="tr_TR" />
+	<meta property="og:site_name" content="ILTAS" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<link rel="canonical" href="https://iltas-website.vercel.app/" />
+	<link rel="alternate" hreflang="tr" href="https://iltas-website.vercel.app/" />
+	<link rel="alternate" hreflang="en" href="https://iltas-website.vercel.app/en" />
+</svelte:head>
 
 <div class="flex flex-col min-h-full bg-[var(--iltas-bg)]">
 	<Header activePage="home" />
@@ -407,7 +422,7 @@
 			</div>
 			<div class="flex flex-col gap-2 text-center md:text-right">
 				<h3 class="text-xl md:text-[26px] font-bold text-white">Projeniz için ücretsiz keşif ve teklif alın</h3>
-				<p class="text-sm md:text-[15px] text-[var(--iltas-gray-light)]">Uzman ekibimiz en kisa surede sizinle iletisime gececektir.</p>
+				<p class="text-sm md:text-[15px] text-[var(--iltas-gray-light)]">Uzman ekibimiz en kısa sürede sizinle iletişime geçecektir.</p>
 			</div>
 		</div>
 	</section>

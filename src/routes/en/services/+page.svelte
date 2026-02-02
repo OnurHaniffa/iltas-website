@@ -83,7 +83,18 @@
 </script>
 
 <svelte:head>
-	<title>Services - ILTAS</title>
+	<title>Services - ILTAS | Grading Line Relocation, Maintenance & Custom Build</title>
+	<meta name="description" content="Grading line relocation, maintenance and overhaul, custom machine design. ILTAS provides comprehensive solutions for your fruit and vegetable production line." />
+	<meta property="og:title" content="Services - ILTAS | Grading Line Relocation, Maintenance & Custom Build" />
+	<meta property="og:description" content="Grading line relocation, maintenance and overhaul, custom machine design. ILTAS provides comprehensive solutions for your fruit and vegetable production line." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://iltas-website.vercel.app/en/services" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:site_name" content="ILTAS" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<link rel="canonical" href="https://iltas-website.vercel.app/en/services" />
+	<link rel="alternate" hreflang="tr" href="https://iltas-website.vercel.app/hizmetlerimiz" />
+	<link rel="alternate" hreflang="en" href="https://iltas-website.vercel.app/en/services" />
 </svelte:head>
 
 <div class="flex flex-col min-h-full bg-[var(--iltas-bg)]">

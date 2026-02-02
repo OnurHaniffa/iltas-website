@@ -9,38 +9,38 @@
 		{
 			image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80',
 			title: 'OZGOKTASLAR SHD',
-			location: 'Turkiye',
-			description: 'Komple boylama hatti tasima ve kurulum projesi'
+			location: 'Türkiye',
+			description: 'Komple boylama hattı taşıma ve kurulum projesi'
 		},
 		{
 			image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80',
 			title: 'SADE TARIM',
-			location: 'Nigde, Turkiye',
-			description: 'Kapasite arttirma ve modernizasyon projesi'
+			location: 'Niğde, Türkiye',
+			description: 'Kapasite arttırma ve modernizasyon projesi'
 		},
 		{
 			image: '/images/pehlivanlar-shd.jpeg',
 			title: 'PEHLIVANLAR SHD',
-			location: 'Turkiye',
-			description: 'Yeni makine imalati ve hat entegrasyonu'
+			location: 'Türkiye',
+			description: 'Yeni makine imalatı ve hat entegrasyonu'
 		},
 		{
 			image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80',
 			title: 'GUNESLER SHD',
-			location: 'Turkiye',
-			description: 'Bakim ve revizyon hizmetleri'
+			location: 'Türkiye',
+			description: 'Bakım ve revizyon hizmetleri'
 		},
 		{
 			image: 'https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=800&q=80',
 			title: 'EL-SA SHD',
-			location: 'Turkiye',
-			description: 'Hat tasima ve yeniden kurulum'
+			location: 'Türkiye',
+			description: 'Hat taşıma ve yeniden kurulum'
 		},
 		{
 			image: 'https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=800&q=80',
 			title: 'BILAL SEZER SHD',
-			location: 'Turkiye',
-			description: 'Teknoloji guncelleme projesi'
+			location: 'Türkiye',
+			description: 'Teknoloji güncelleme projesi'
 		}
 	];
 
@@ -71,7 +71,18 @@
 </script>
 
 <svelte:head>
-	<title>Projeler - ILTAS</title>
+	<title>Projelerimiz - ILTAS | Başarıyla Tamamlanan Boylama Projeleri</title>
+	<meta name="description" content="Türkiye genelinde farklı ölçeklerdeki işletmeler için gerçekleştirdiğimiz boylama hattı taşıma, bakım ve imalat projelerimizi inceleyin." />
+	<meta property="og:title" content="Projelerimiz - ILTAS | Başarıyla Tamamlanan Boylama Projeleri" />
+	<meta property="og:description" content="Türkiye genelinde farklı ölçeklerdeki işletmeler için gerçekleştirdiğimiz boylama hattı taşıma, bakım ve imalat projelerimizi inceleyin." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://iltas-website.vercel.app/projeler" />
+	<meta property="og:locale" content="tr_TR" />
+	<meta property="og:site_name" content="ILTAS" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<link rel="canonical" href="https://iltas-website.vercel.app/projeler" />
+	<link rel="alternate" hreflang="tr" href="https://iltas-website.vercel.app/projeler" />
+	<link rel="alternate" hreflang="en" href="https://iltas-website.vercel.app/en/projects" />
 </svelte:head>
 
 <div class="flex flex-col min-h-full bg-[var(--iltas-bg)]">
@@ -83,7 +94,7 @@
 			class="text-xs font-medium text-[var(--iltas-green)] tracking-[2px] font-semibold
 				{mounted ? 'animate-fade-in-up' : 'opacity-0'}"
 		>
-			TAMAMLANMIS PROJELER
+			TAMAMLANMIŞ PROJELER
 		</span>
 		<h1
 			class="text-2xl md:text-5xl text-[var(--iltas-dark)] text-center font-extrabold

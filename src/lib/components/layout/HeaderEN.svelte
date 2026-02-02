@@ -34,6 +34,12 @@
 	function closeMobileMenu() {
 		mobileMenuOpen = false;
 	}
+
+	$effect(() => {
+		if (typeof document !== 'undefined') {
+			document.body.style.overflow = mobileMenuOpen ? 'hidden' : '';
+		}
+	});
 </script>
 
 <header
@@ -126,7 +132,7 @@
 			onclick={closeMobileMenu}
 			class="flex items-center gap-3 px-4 py-3 rounded-lg text-base font-medium text-[var(--iltas-green)]"
 		>
-			Turkce (TR)
+			Türkçe (TR)
 		</a>
 
 		<div class="mt-4 pt-4 border-t border-[var(--iltas-border)]">

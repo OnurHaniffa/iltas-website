@@ -13,9 +13,9 @@
 			description: 'Mevcut veya ikinci el boylama hatlarının söküm, taşıma ve yeniden kurulum işlemlerini güvenli ve planlı şekilde gerçekleştiriyoruz. Makinenizin değerini koruyarak minimum duruş süresi ile hizmet veriyoruz.',
 			image: '/images/boylama-hatti-tasima.jpeg',
 			items: [
-				'Profesyonel sokum ve kurulum',
+				'Profesyonel söküm ve kurulum',
 				'Yer tespit ve planlama',
-				'Lojistik ve nakliye destegi'
+				'Lojistik ve nakliye desteği'
 			],
 			itemColor: '#18A058',
 			bgColor: 'bg-white',
@@ -29,8 +29,8 @@
 			description: 'Boylama ve taşıma sistemleriniz için periyodik bakım, parça değişimi, kapasite artırımı ve performans iyileştirme hizmetleri sunuyoruz. Sistemlerinizin ömrünü uzatıyoruz.',
 			image: '/images/bakim-revizyon.jpeg',
 			items: [
-				'Periyodik bakim programlari',
-				'Teknoloji guncelleme ve modernizasyon',
+				'Periyodik bakım programları',
+				'Teknoloji güncelleme ve modernizasyon',
 				'7/24 teknik destek'
 			],
 			itemColor: '#1976D2',
@@ -45,9 +45,9 @@
 			description: 'İhtiyaca özel tasarlanan yeni makineler ile üretim süreçlerinizi bir üst seviyeye taşıyoruz. Kapasite, ürün çeşidi ve tesis yapınıza göre özel çözümler üretiyoruz.',
 			image: '/images/hizmetlerimiz.png',
 			items: [
-				'Ozel tasarim makine imalati',
-				'Kapasite arttirma cozumleri',
-				'Anahtar teslim proje yonetimi'
+				'Özel tasarım makine imalatı',
+				'Kapasite arttırma çözümleri',
+				'Anahtar teslim proje yönetimi'
 			],
 			itemColor: '#2DD4BF',
 			bgColor: 'bg-white',
@@ -83,7 +83,18 @@
 </script>
 
 <svelte:head>
-	<title>Hizmetlerimiz - ILTAS</title>
+	<title>Hizmetlerimiz - ILTAS | Boylama Hattı Taşıma, Bakım & Yeni İmalat</title>
+	<meta name="description" content="Boylama hattı taşıma, bakım ve revizyon, yeni makine imalatı. ILTAS olarak üretim hattınız için uçtan uca profesyonel çözümler sunuyoruz." />
+	<meta property="og:title" content="Hizmetlerimiz - ILTAS | Boylama Hattı Taşıma, Bakım & Yeni İmalat" />
+	<meta property="og:description" content="Boylama hattı taşıma, bakım ve revizyon, yeni makine imalatı. ILTAS olarak üretim hattınız için uçtan uca profesyonel çözümler sunuyoruz." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://iltas-website.vercel.app/hizmetlerimiz" />
+	<meta property="og:locale" content="tr_TR" />
+	<meta property="og:site_name" content="ILTAS" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<link rel="canonical" href="https://iltas-website.vercel.app/hizmetlerimiz" />
+	<link rel="alternate" hreflang="tr" href="https://iltas-website.vercel.app/hizmetlerimiz" />
+	<link rel="alternate" hreflang="en" href="https://iltas-website.vercel.app/en/services" />
 </svelte:head>
 
 <div class="flex flex-col min-h-full bg-[var(--iltas-bg)]">

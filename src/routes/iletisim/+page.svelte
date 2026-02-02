@@ -1,9 +1,12 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { enhance } from '$app/forms';
 	import { Header, Footer } from '$lib/components/layout';
 
+	let { form } = $props();
 	let mounted = $state(false);
 	let visibleSections = $state<Set<string>>(new Set());
+	let submitting = $state(false);
 
 	const contactInfo = [
 		{
@@ -28,13 +31,13 @@
 			iconBg: 'bg-[#2DD4BF20]',
 			label: 'Adres',
 			value: 'Sanayi Mah. 3210 Sk. No:10, Isparta / Türkiye',
-			href: '#'
+			href: 'https://maps.google.com/?q=Sanayi+Mah+3210+Sk+No:10+Isparta+Turkey'
 		},
 		{
 			icon: 'calendar',
 			iconColor: '#18A058',
 			iconBg: 'bg-[#18A05820]',
-			label: 'Calisma Saatleri',
+			label: 'Çalışma Saatleri',
 			value: 'Pazartesi - Cuma: 09:00 - 18:00',
 			href: '#'
 		}
@@ -67,7 +70,18 @@
 </script>
 
 <svelte:head>
-	<title>Iletisim - ILTAS</title>
+	<title>İletişim - ILTAS | Ücretsiz Keşif ve Teklif Alın</title>
+	<meta name="description" content="ILTAS ile iletişime geçin. Boylama sistemleri için ücretsiz keşif ve teklif alın. Adres: Sanayi Mah., Isparta. Tel: +90 554 550 4450." />
+	<meta property="og:title" content="İletişim - ILTAS | Ücretsiz Keşif ve Teklif Alın" />
+	<meta property="og:description" content="ILTAS ile iletişime geçin. Boylama sistemleri için ücretsiz keşif ve teklif alın. Adres: Sanayi Mah., Isparta. Tel: +90 554 550 4450." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://iltas-website.vercel.app/iletisim" />
+	<meta property="og:locale" content="tr_TR" />
+	<meta property="og:site_name" content="ILTAS" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<link rel="canonical" href="https://iltas-website.vercel.app/iletisim" />
+	<link rel="alternate" hreflang="tr" href="https://iltas-website.vercel.app/iletisim" />
+	<link rel="alternate" hreflang="en" href="https://iltas-website.vercel.app/en/contact" />
 </svelte:head>
 
 <div class="flex flex-col min-h-full bg-[var(--iltas-bg)]">
@@ -81,7 +95,7 @@
 				{mounted ? 'animate-fade-in-left' : 'opacity-0'}"
 		>
 			<div class="flex flex-col gap-3 md:gap-4">
-				<span class="text-xs font-medium text-[var(--iltas-green)] tracking-[2px] font-semibold">ILETISIM</span>
+				<span class="text-xs font-medium text-[var(--iltas-green)] tracking-[2px] font-semibold">İLETİŞİM</span>
 				<h1 class="text-2xl md:text-[42px] text-[var(--iltas-dark)] font-extrabold leading-tight">Bizimle İletişime Geçin</h1>
 				<p class="text-sm md:text-base text-[var(--iltas-gray)] leading-[1.6] max-w-[400px]">
 					Yeni bir yatırım, mevcut hattınız için geliştirme veya teknik destek ihtiyacınız mı var? Ekibimizle iletişime geçin, size en uygun çözümü birlikte planlayalım.
@@ -128,9 +142,28 @@
 			class="flex-1 flex flex-col gap-5 md:gap-6 p-6 md:p-10 bg-white rounded-xl md:rounded-2xl border border-[var(--iltas-border)] shadow-[var(--shadow-md)] transition-all duration-500 hover:shadow-[var(--shadow-xl)]
 				{mounted ? 'animate-fade-in-right' : 'opacity-0'}"
 		>
-			<h2 class="text-lg md:text-xl font-semibold text-[var(--iltas-dark)]">Mesaj Gonderin</h2>
+			<h2 class="text-lg md:text-xl font-semibold text-[var(--iltas-dark)]">Mesaj Gönderin</h2>
 
-			<form class="flex flex-col gap-5 md:gap-6">
+			{#if form?.success}
+				<div class="flex items-center gap-3 p-4 bg-[#18A05815] border border-[#18A05830] rounded-lg">
+					<svg class="w-5 h-5 text-[var(--iltas-green)] flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+						<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+					</svg>
+					<p class="text-sm text-[var(--iltas-dark)]">Mesajınız başarıyla gönderildi. En kısa sürede sizinle iletişime geçeceğiz.</p>
+				</div>
+			{/if}
+
+			<form
+				method="POST"
+				use:enhance={() => {
+					submitting = true;
+					return async ({ update }) => {
+						await update();
+						submitting = false;
+					};
+				}}
+				class="flex flex-col gap-5 md:gap-6"
+			>
 				<!-- Name & Email Row -->
 				<div class="flex flex-col sm:flex-row gap-4">
 					<div class="flex flex-col gap-2 flex-1">
@@ -138,18 +171,26 @@
 						<input
 							type="text"
 							id="name"
-							placeholder="Adinizi girin"
-							class="h-11 md:h-12 px-4 bg-[var(--iltas-bg-alt)] rounded-lg border border-[var(--iltas-border)] text-sm text-[var(--iltas-dark)] placeholder:text-[var(--iltas-gray-light)] transition-all duration-300 focus:outline-none focus:border-[var(--iltas-green)] focus:ring-2 focus:ring-[var(--iltas-green-light)]"
+							name="name"
+							required
+							value={form?.name ?? ''}
+							placeholder="Adınızı girin"
+							class="h-11 md:h-12 px-4 bg-[var(--iltas-bg-alt)] rounded-lg border text-sm text-[var(--iltas-dark)] placeholder:text-[var(--iltas-gray-light)] transition-all duration-300 focus:outline-none focus:border-[var(--iltas-green)] focus:ring-2 focus:ring-[var(--iltas-green-light)] {form?.errors?.name ? 'border-red-400' : 'border-[var(--iltas-border)]'}"
 						/>
+						{#if form?.errors?.name}<span class="text-xs text-red-500">{form.errors.name}</span>{/if}
 					</div>
 					<div class="flex flex-col gap-2 flex-1">
 						<label for="email" class="text-[13px] font-medium text-[var(--iltas-gray)]">E-posta</label>
 						<input
 							type="email"
 							id="email"
+							name="email"
+							required
+							value={form?.email ?? ''}
 							placeholder="E-posta adresinizi girin"
-							class="h-11 md:h-12 px-4 bg-[var(--iltas-bg-alt)] rounded-lg border border-[var(--iltas-border)] text-sm text-[var(--iltas-dark)] placeholder:text-[var(--iltas-gray-light)] transition-all duration-300 focus:outline-none focus:border-[var(--iltas-green)] focus:ring-2 focus:ring-[var(--iltas-green-light)]"
+							class="h-11 md:h-12 px-4 bg-[var(--iltas-bg-alt)] rounded-lg border text-sm text-[var(--iltas-dark)] placeholder:text-[var(--iltas-gray-light)] transition-all duration-300 focus:outline-none focus:border-[var(--iltas-green)] focus:ring-2 focus:ring-[var(--iltas-green-light)] {form?.errors?.email ? 'border-red-400' : 'border-[var(--iltas-border)]'}"
 						/>
+						{#if form?.errors?.email}<span class="text-xs text-red-500">{form.errors.email}</span>{/if}
 					</div>
 				</div>
 
@@ -159,31 +200,45 @@
 					<input
 						type="tel"
 						id="phone"
-						placeholder="Telefon numaranizi girin"
+						name="phone"
+						value={form?.phone ?? ''}
+						placeholder="Telefon numaranızı girin"
 						class="h-11 md:h-12 px-4 bg-[var(--iltas-bg-alt)] rounded-lg border border-[var(--iltas-border)] text-sm text-[var(--iltas-dark)] placeholder:text-[var(--iltas-gray-light)] transition-all duration-300 focus:outline-none focus:border-[var(--iltas-green)] focus:ring-2 focus:ring-[var(--iltas-green-light)]"
 					/>
 				</div>
 
 				<!-- Message -->
 				<div class="flex flex-col gap-2">
-					<label for="message" class="text-[13px] font-medium text-[var(--iltas-gray)]">Mesajiniz</label>
+					<label for="message" class="text-[13px] font-medium text-[var(--iltas-gray)]">Mesajınız</label>
 					<textarea
 						id="message"
-						placeholder="Projeniz hakkinda bilgi verin..."
+						name="message"
+						required
+						placeholder="Projeniz hakkında bilgi verin..."
 						rows="5"
-						class="p-4 bg-[var(--iltas-bg-alt)] rounded-lg border border-[var(--iltas-border)] text-sm text-[var(--iltas-dark)] placeholder:text-[var(--iltas-gray-light)] resize-none transition-all duration-300 focus:outline-none focus:border-[var(--iltas-green)] focus:ring-2 focus:ring-[var(--iltas-green-light)]"
-					></textarea>
+						class="p-4 bg-[var(--iltas-bg-alt)] rounded-lg border text-sm text-[var(--iltas-dark)] placeholder:text-[var(--iltas-gray-light)] resize-none transition-all duration-300 focus:outline-none focus:border-[var(--iltas-green)] focus:ring-2 focus:ring-[var(--iltas-green-light)] {form?.errors?.message ? 'border-red-400' : 'border-[var(--iltas-border)]'}"
+					>{form?.message ?? ''}</textarea>
+					{#if form?.errors?.message}<span class="text-xs text-red-500">{form.errors.message}</span>{/if}
 				</div>
 
 				<!-- Submit Button -->
 				<button
 					type="submit"
-					class="group flex items-center justify-center gap-[10px] h-12 md:h-[52px] bg-[var(--iltas-green)] text-white text-sm md:text-base font-semibold rounded-lg btn-hover"
+					disabled={submitting}
+					class="group flex items-center justify-center gap-[10px] h-12 md:h-[52px] bg-[var(--iltas-green)] text-white text-sm md:text-base font-semibold rounded-lg btn-hover disabled:opacity-60 disabled:cursor-not-allowed"
 				>
-					<svg class="w-4 md:w-[18px] h-4 md:h-[18px] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-						<line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
-					</svg>
-					Mesaj Gonder
+					{#if submitting}
+						<svg class="w-4 md:w-[18px] h-4 md:h-[18px] animate-spin" fill="none" viewBox="0 0 24 24">
+							<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+							<path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+						</svg>
+						Gönderiliyor...
+					{:else}
+						<svg class="w-4 md:w-[18px] h-4 md:h-[18px] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+							<line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+						</svg>
+						Mesaj Gönder
+					{/if}
 				</button>
 			</form>
 		</div>

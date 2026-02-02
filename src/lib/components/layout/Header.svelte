@@ -12,10 +12,10 @@
 
 	const navItems = [
 		{ href: '/', label: 'Ana Sayfa', key: 'home' },
-		{ href: '/hakkimizda', label: 'Hakkimizda', key: 'about' },
+		{ href: '/hakkimizda', label: 'Hakkımızda', key: 'about' },
 		{ href: '/hizmetlerimiz', label: 'Hizmetlerimiz', key: 'services' },
 		{ href: '/projeler', label: 'Projeler', key: 'projects' },
-		{ href: '/iletisim', label: 'Iletisim', key: 'contact' }
+		{ href: '/iletisim', label: 'İletişim', key: 'contact' }
 	];
 
 	onMount(() => {
@@ -34,6 +34,12 @@
 	function closeMobileMenu() {
 		mobileMenuOpen = false;
 	}
+
+	$effect(() => {
+		if (typeof document !== 'undefined') {
+			document.body.style.overflow = mobileMenuOpen ? 'hidden' : '';
+		}
+	});
 </script>
 
 <header
@@ -72,7 +78,7 @@
 		href="/iletisim"
 		class="hidden md:flex group items-center gap-2 px-4 lg:px-[22px] py-2.5 lg:py-3 text-sm font-semibold text-white bg-[var(--iltas-green)] rounded-lg shadow-[var(--shadow-green)] btn-hover"
 	>
-		<span>Teklif Alin</span>
+		<span>Teklif Alın</span>
 		<svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
 			<path d="M5 12h14M12 5l7 7-7 7"/>
 		</svg>
@@ -135,7 +141,7 @@
 				onclick={closeMobileMenu}
 				class="flex items-center justify-center gap-2 w-full px-4 py-3 bg-[var(--iltas-green)] text-white text-base font-semibold rounded-lg"
 			>
-				<span>Teklif Alin</span>
+				<span>Teklif Alın</span>
 				<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
 					<path d="M5 12h14M12 5l7 7-7 7"/>
 				</svg>

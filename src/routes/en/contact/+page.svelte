@@ -1,9 +1,12 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { enhance } from '$app/forms';
 	import { HeaderEN, FooterEN } from '$lib/components/layout';
 
+	let { form } = $props();
 	let mounted = $state(false);
 	let visibleSections = $state<Set<string>>(new Set());
+	let submitting = $state(false);
 
 	const contactInfo = [
 		{
@@ -28,7 +31,7 @@
 			iconBg: 'bg-[#2DD4BF20]',
 			label: 'Address',
 			value: 'Sanayi Mah. 3210 Sk. No:10, Isparta / Turkey',
-			href: '#'
+			href: 'https://maps.google.com/?q=Sanayi+Mah+3210+Sk+No:10+Isparta+Turkey'
 		},
 		{
 			icon: 'calendar',
@@ -67,7 +70,18 @@
 </script>
 
 <svelte:head>
-	<title>Contact - ILTAS</title>
+	<title>Contact - ILTAS | Get a Free Quote for Your Project</title>
+	<meta name="description" content="Contact ILTAS for a free site visit and quote. Grading system relocation, maintenance, and custom manufacturing. Based in Isparta, Türkiye. Call +90 554 550 4450." />
+	<meta property="og:title" content="Contact - ILTAS | Get a Free Quote for Your Project" />
+	<meta property="og:description" content="Contact ILTAS for a free site visit and quote. Grading system relocation, maintenance, and custom manufacturing. Based in Isparta, Türkiye. Call +90 554 550 4450." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://iltas-website.vercel.app/en/contact" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:site_name" content="ILTAS" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<link rel="canonical" href="https://iltas-website.vercel.app/en/contact" />
+	<link rel="alternate" hreflang="tr" href="https://iltas-website.vercel.app/iletisim" />
+	<link rel="alternate" hreflang="en" href="https://iltas-website.vercel.app/en/contact" />
 </svelte:head>
 
 <div class="flex flex-col min-h-full bg-[var(--iltas-bg)]">
@@ -130,7 +144,26 @@
 		>
 			<h2 class="text-lg md:text-xl font-semibold text-[var(--iltas-dark)]">Send a Message</h2>
 
-			<form class="flex flex-col gap-5 md:gap-6">
+			{#if form?.success}
+				<div class="flex items-center gap-3 p-4 bg-[#18A05815] border border-[#18A05830] rounded-lg">
+					<svg class="w-5 h-5 text-[var(--iltas-green)] flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+						<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+					</svg>
+					<p class="text-sm text-[var(--iltas-dark)]">Your message has been sent successfully. We will get back to you shortly.</p>
+				</div>
+			{/if}
+
+			<form
+				method="POST"
+				use:enhance={() => {
+					submitting = true;
+					return async ({ update }) => {
+						await update();
+						submitting = false;
+					};
+				}}
+				class="flex flex-col gap-5 md:gap-6"
+			>
 				<!-- Name & Email Row -->
 				<div class="flex flex-col sm:flex-row gap-4">
 					<div class="flex flex-col gap-2 flex-1">
@@ -138,18 +171,26 @@
 						<input
 							type="text"
 							id="name"
+							name="name"
+							required
+							value={form?.name ?? ''}
 							placeholder="Enter your name"
-							class="h-11 md:h-12 px-4 bg-[var(--iltas-bg-alt)] rounded-lg border border-[var(--iltas-border)] text-sm text-[var(--iltas-dark)] placeholder:text-[var(--iltas-gray-light)] transition-all duration-300 focus:outline-none focus:border-[var(--iltas-green)] focus:ring-2 focus:ring-[var(--iltas-green-light)]"
+							class="h-11 md:h-12 px-4 bg-[var(--iltas-bg-alt)] rounded-lg border text-sm text-[var(--iltas-dark)] placeholder:text-[var(--iltas-gray-light)] transition-all duration-300 focus:outline-none focus:border-[var(--iltas-green)] focus:ring-2 focus:ring-[var(--iltas-green-light)] {form?.errors?.name ? 'border-red-400' : 'border-[var(--iltas-border)]'}"
 						/>
+						{#if form?.errors?.name}<span class="text-xs text-red-500">{form.errors.name}</span>{/if}
 					</div>
 					<div class="flex flex-col gap-2 flex-1">
 						<label for="email" class="text-[13px] font-medium text-[var(--iltas-gray)]">Email</label>
 						<input
 							type="email"
 							id="email"
+							name="email"
+							required
+							value={form?.email ?? ''}
 							placeholder="Enter your email"
-							class="h-11 md:h-12 px-4 bg-[var(--iltas-bg-alt)] rounded-lg border border-[var(--iltas-border)] text-sm text-[var(--iltas-dark)] placeholder:text-[var(--iltas-gray-light)] transition-all duration-300 focus:outline-none focus:border-[var(--iltas-green)] focus:ring-2 focus:ring-[var(--iltas-green-light)]"
+							class="h-11 md:h-12 px-4 bg-[var(--iltas-bg-alt)] rounded-lg border text-sm text-[var(--iltas-dark)] placeholder:text-[var(--iltas-gray-light)] transition-all duration-300 focus:outline-none focus:border-[var(--iltas-green)] focus:ring-2 focus:ring-[var(--iltas-green-light)] {form?.errors?.email ? 'border-red-400' : 'border-[var(--iltas-border)]'}"
 						/>
+						{#if form?.errors?.email}<span class="text-xs text-red-500">{form.errors.email}</span>{/if}
 					</div>
 				</div>
 
@@ -159,6 +200,8 @@
 					<input
 						type="tel"
 						id="phone"
+						name="phone"
+						value={form?.phone ?? ''}
 						placeholder="Enter your phone number"
 						class="h-11 md:h-12 px-4 bg-[var(--iltas-bg-alt)] rounded-lg border border-[var(--iltas-border)] text-sm text-[var(--iltas-dark)] placeholder:text-[var(--iltas-gray-light)] transition-all duration-300 focus:outline-none focus:border-[var(--iltas-green)] focus:ring-2 focus:ring-[var(--iltas-green-light)]"
 					/>
@@ -169,21 +212,33 @@
 					<label for="message" class="text-[13px] font-medium text-[var(--iltas-gray)]">Your Message</label>
 					<textarea
 						id="message"
+						name="message"
+						required
 						placeholder="Tell us about your project..."
 						rows="5"
-						class="p-4 bg-[var(--iltas-bg-alt)] rounded-lg border border-[var(--iltas-border)] text-sm text-[var(--iltas-dark)] placeholder:text-[var(--iltas-gray-light)] resize-none transition-all duration-300 focus:outline-none focus:border-[var(--iltas-green)] focus:ring-2 focus:ring-[var(--iltas-green-light)]"
-					></textarea>
+						class="p-4 bg-[var(--iltas-bg-alt)] rounded-lg border text-sm text-[var(--iltas-dark)] placeholder:text-[var(--iltas-gray-light)] resize-none transition-all duration-300 focus:outline-none focus:border-[var(--iltas-green)] focus:ring-2 focus:ring-[var(--iltas-green-light)] {form?.errors?.message ? 'border-red-400' : 'border-[var(--iltas-border)]'}"
+					>{form?.message ?? ''}</textarea>
+					{#if form?.errors?.message}<span class="text-xs text-red-500">{form.errors.message}</span>{/if}
 				</div>
 
 				<!-- Submit Button -->
 				<button
 					type="submit"
-					class="group flex items-center justify-center gap-[10px] h-12 md:h-[52px] bg-[var(--iltas-green)] text-white text-sm md:text-base font-semibold rounded-lg btn-hover"
+					disabled={submitting}
+					class="group flex items-center justify-center gap-[10px] h-12 md:h-[52px] bg-[var(--iltas-green)] text-white text-sm md:text-base font-semibold rounded-lg btn-hover disabled:opacity-60 disabled:cursor-not-allowed"
 				>
-					<svg class="w-4 md:w-[18px] h-4 md:h-[18px] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-						<line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
-					</svg>
-					Send Message
+					{#if submitting}
+						<svg class="w-4 md:w-[18px] h-4 md:h-[18px] animate-spin" fill="none" viewBox="0 0 24 24">
+							<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+							<path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+						</svg>
+						Sending...
+					{:else}
+						<svg class="w-4 md:w-[18px] h-4 md:h-[18px] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+							<line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+						</svg>
+						Send Message
+					{/if}
 				</button>
 			</form>
 		</div>

@@ -81,7 +81,7 @@
 		{
 			image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80',
 			title: 'SADE TARIM',
-			location: 'Nigde, Turkey'
+			location: 'Niğde, Turkey'
 		},
 		{
 			image: '/images/pehlivanlar-shd.jpeg',
@@ -129,7 +129,18 @@
 </script>
 
 <svelte:head>
-	<title>ILTAS - Sorting Systems Solutions</title>
+	<title>ILTAS - Fruit & Vegetable Grading Systems | Your Trusted Partner</title>
+	<meta name="description" content="ILTAS designs, installs, and maintains bespoke fruit and vegetable grading systems. Sorting line relocation, maintenance, and custom machine manufacturing since 2020." />
+	<meta property="og:title" content="ILTAS - Fruit & Vegetable Grading Systems | Your Trusted Partner" />
+	<meta property="og:description" content="ILTAS designs, installs, and maintains bespoke fruit and vegetable grading systems. Sorting line relocation, maintenance, and custom machine manufacturing since 2020." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://iltas-website.vercel.app/en" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:site_name" content="ILTAS" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<link rel="canonical" href="https://iltas-website.vercel.app/en" />
+	<link rel="alternate" hreflang="tr" href="https://iltas-website.vercel.app/" />
+	<link rel="alternate" hreflang="en" href="https://iltas-website.vercel.app/en" />
 </svelte:head>
 
 <div class="flex flex-col min-h-full bg-[var(--iltas-bg)]">

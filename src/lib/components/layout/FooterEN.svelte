@@ -9,7 +9,7 @@
 	const contactLinks = [
 		{ href: 'mailto:info@iltasmakine.com', label: 'info@iltasmakine.com' },
 		{ href: 'tel:+905545504450', label: '+90 554 550 4450' },
-		{ href: '#', label: 'Isparta, Turkey' }
+		{ href: 'https://maps.google.com/?q=Sanayi+Mah+3210+Sk+No:10+Isparta+Turkey', label: 'Isparta, Turkey' }
 	];
 </script>
 
@@ -67,6 +67,7 @@
 						href={link.href}
 						class="text-sm text-[var(--iltas-gray-light)] hover:text-white hover:translate-x-1 transition-all duration-300"
 						style="transition-delay: {i * 50}ms"
+						{...link.href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {}}
 					>
 						{link.label}
 					</a>
@@ -104,7 +105,7 @@
 
 	<!-- Footer Bottom -->
 	<div class="flex flex-col md:flex-row items-center justify-between gap-4 px-5 md:px-[50px] py-6 md:py-10">
-		<span class="text-[13px] text-[var(--iltas-gray)] text-center md:text-left">© 2025 ILTAS Sorting and Harvesting Systems. All rights reserved.</span>
+		<span class="text-[13px] text-[var(--iltas-gray)] text-center md:text-left">© {new Date().getFullYear()} ILTAS Sorting and Harvesting Systems. All rights reserved.</span>
 		<div class="flex gap-6">
 			<a href="#" class="text-[13px] text-[var(--iltas-gray)] hover:text-white transition-colors duration-300">Privacy Policy</a>
 			<a href="#" class="text-[13px] text-[var(--iltas-gray)] hover:text-white transition-colors duration-300">Terms of Use</a>

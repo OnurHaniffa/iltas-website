@@ -10,29 +10,29 @@
 			icon: 'shield',
 			iconColor: '#18A058',
 			iconBg: 'from-[#18A05820] to-[#18A05810]',
-			title: 'Guvenilirlik',
-			description: 'Her projede sozumuzun arkasinda dururuz ve musteri memnuniyetini on planda tutariz.'
+			title: 'Güvenilirlik',
+			description: 'Her projede sözümüzün arkasında dururuz ve müşteri memnuniyetini ön planda tutarız.'
 		},
 		{
 			icon: 'award',
 			iconColor: '#1976D2',
 			iconBg: 'from-[#1976D220] to-[#1976D210]',
 			title: 'Kalite',
-			description: 'Dunya standartlarinda ekipman ve uygulamalar ile en yuksek kaliteyi sunuyoruz.'
+			description: 'Dünya standartlarında ekipman ve uygulamalar ile en yüksek kaliteyi sunuyoruz.'
 		},
 		{
 			icon: 'users',
 			iconColor: '#2DD4BF',
 			iconBg: 'from-[#2DD4BF20] to-[#2DD4BF10]',
-			title: 'Uzmanlik',
-			description: 'Deneyimli muhendis kadromuz ile her projeye ozel cozumler uretiyoruz.'
+			title: 'Uzmanlık',
+			description: 'Deneyimli mühendis kadromuz ile her projeye özel çözümler üretiyoruz.'
 		},
 		{
 			icon: 'headphones',
 			iconColor: '#18A058',
 			iconBg: 'from-[#18A05820] to-[#18A05810]',
 			title: '7/24 Destek',
-			description: 'Teknik destek ekibimiz her zaman yaninizdadir ve sorunlarinizi hizla cozume kavusturur.'
+			description: 'Teknik destek ekibimiz her zaman yanınızdadır ve sorunlarınızı hızla çözüme kavuşturur.'
 		}
 	];
 
@@ -63,7 +63,18 @@
 </script>
 
 <svelte:head>
-	<title>Hakkimizda - ILTAS</title>
+	<title>Hakkımızda - ILTAS Boylama Sistemleri</title>
+	<meta name="description" content="ILTAS, 2020 yılından bu yana meyve ve sebze işleme sektörüne yönelik boylama, taşıma ve otomasyon çözümleri sunan mühendislik firmasıdır." />
+	<meta property="og:title" content="Hakkımızda - ILTAS Boylama Sistemleri" />
+	<meta property="og:description" content="ILTAS, 2020 yılından bu yana meyve ve sebze işleme sektörüne yönelik boylama, taşıma ve otomasyon çözümleri sunan mühendislik firmasıdır." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://iltas-website.vercel.app/hakkimizda" />
+	<meta property="og:locale" content="tr_TR" />
+	<meta property="og:site_name" content="ILTAS" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<link rel="canonical" href="https://iltas-website.vercel.app/hakkimizda" />
+	<link rel="alternate" hreflang="tr" href="https://iltas-website.vercel.app/hakkimizda" />
+	<link rel="alternate" hreflang="en" href="https://iltas-website.vercel.app/en/about" />
 </svelte:head>
 
 <div class="flex flex-col min-h-full bg-[var(--iltas-bg)]">
@@ -106,7 +117,7 @@
 			class="flex flex-col gap-4 md:gap-6 flex-1
 				{isVisible('story') ? 'animate-fade-in-right' : 'opacity-0'}"
 		>
-			<span class="text-xs font-bold text-[var(--iltas-green)] tracking-[2px]">HIKAYEMIZ</span>
+			<span class="text-xs font-bold text-[var(--iltas-green)] tracking-[2px]">HİKAYEMİZ</span>
 			<h2 class="text-xl md:text-[30px] font-extrabold text-[var(--iltas-dark)] leading-[1.3]">
 				Kalite ve Güven Üzerine Kurulu Bir Şirket
 			</h2>
@@ -129,8 +140,8 @@
 			class="flex flex-col items-center gap-3 md:gap-4
 				{isVisible('values') ? 'animate-fade-in-up' : 'opacity-0'}"
 		>
-			<span class="text-xs font-bold text-[var(--iltas-blue)] tracking-[2px]">DEGERLERIMIZ</span>
-			<h2 class="text-2xl md:text-4xl font-extrabold text-[var(--iltas-dark)] text-center">Bizi Farkli Kilan Degerler</h2>
+			<span class="text-xs font-bold text-[var(--iltas-blue)] tracking-[2px]">DEĞERLERİMİZ</span>
+			<h2 class="text-2xl md:text-4xl font-extrabold text-[var(--iltas-dark)] text-center">Bizi Farklı Kılan Değerler</h2>
 		</div>
 
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 w-full">

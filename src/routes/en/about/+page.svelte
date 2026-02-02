@@ -63,7 +63,18 @@
 </script>
 
 <svelte:head>
-	<title>About Us - ILTAS</title>
+	<title>About Us - ILTAS Grading Systems</title>
+	<meta name="description" content="Since 2020, ILTAS has been empowering fruit and vegetable processors with cutting-edge grading, conveying, and handling solutions across Türkiye." />
+	<meta property="og:title" content="About Us - ILTAS Grading Systems" />
+	<meta property="og:description" content="Since 2020, ILTAS has been empowering fruit and vegetable processors with cutting-edge grading, conveying, and handling solutions across Türkiye." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://iltas-website.vercel.app/en/about" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:site_name" content="ILTAS" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<link rel="canonical" href="https://iltas-website.vercel.app/en/about" />
+	<link rel="alternate" hreflang="tr" href="https://iltas-website.vercel.app/hakkimizda" />
+	<link rel="alternate" hreflang="en" href="https://iltas-website.vercel.app/en/about" />
 </svelte:head>
 
 <div class="flex flex-col min-h-full bg-[var(--iltas-bg)]">
