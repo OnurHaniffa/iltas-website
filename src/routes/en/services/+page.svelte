@@ -9,8 +9,8 @@
 		{
 			num: '01',
 			numColor: '#18A058',
-			title: 'Sorting Line Relocation',
-			description: 'Looking for a second-hand sorting line? Or found one and need it dismantled and reinstalled? ILTAS Sorting and Harvesting Systems is expert in this! Our professional team provides safe dismantling, transportation and installation services at new locations.',
+			title: 'Grading Line Relocation',
+			description: 'We safely dismantle, transport, and reinstall second-hand or existing grading lines — minimizing downtime and maximising return on equipment investment.',
 			image: '/images/boylama-hatti-tasima.jpeg',
 			items: [
 				'Professional dismantling and installation',
@@ -25,8 +25,8 @@
 		{
 			num: '02',
 			numColor: '#1976D2',
-			title: 'Maintenance & Revision',
-			description: 'Need a solution to increase capacity in your existing sorting line? ILTAS Sorting and Harvesting Systems is expert in this. We keep your system running at maximum efficiency with periodic maintenance, technology upgrades and 24/7 technical support.',
+			title: 'Maintenance & Overhaul',
+			description: 'Keep your systems in peak condition. We offer scheduled maintenance, spare parts supply, performance upgrades, and full system refurbishment to extend lifetime and reliability.',
 			image: '/images/bakim-revizyon.jpeg',
 			items: [
 				'Periodic maintenance programs',
@@ -41,8 +41,8 @@
 		{
 			num: '03',
 			numColor: '#2DD4BF',
-			title: 'Custom Manufacturing',
-			description: 'We know the system you need for your sorting, pre-sorting, and packaging lines and bring you the right system from around the world. We offer capacity enhancement solutions with custom machine manufacturing and turnkey project management.',
+			title: 'Custom Machine Design & Build',
+			description: 'Need higher capacity or a specialised function? We custom-engineer and manufacture new machines tailored to your exact workflow requirements.',
 			image: '/images/hizmetlerimiz.png',
 			items: [
 				'Custom machine manufacturing',
@@ -101,13 +101,13 @@
 			class="text-2xl md:text-5xl text-[var(--iltas-dark)] text-center font-extrabold
 				{mounted ? 'animate-fade-in-up delay-100' : 'opacity-0'}"
 		>
-			Professional Sorting Solutions
+			Comprehensive Solutions for Your Production Line
 		</h1>
 		<p
 			class="text-sm md:text-lg text-[var(--iltas-gray)] leading-[1.6] text-center max-w-[600px]
 				{mounted ? 'animate-fade-in-up delay-200' : 'opacity-0'}"
 		>
-			We provide comprehensive services for your fruit and vegetable processing facilities
+			At ILTAS, we cover every stage of your production needs — from relocation and installation to maintenance and custom engineering. Our services are crafted around your business goals and technical challenges.
 		</p>
 	</section>
 

@@ -52,24 +52,24 @@
 			icon: 'truck',
 			iconColor: '#18A058',
 			iconBg: 'from-[#18A05820] to-[#18A05810]',
-			title: 'Boylama Hatti Tasima',
-			description: 'Ikinci el boylama hatlari icin guvenli sokulme, nakliye ve yeni lokasyonda kurulum hizmetleri.',
+			title: 'Boylama Hattı Taşıma',
+			description: 'Mevcut veya ikinci el boylama hatlarının söküm, taşıma ve yeniden kurulum işlemlerini güvenli ve planlı şekilde gerçekleştiriyoruz. Makinenizin değerini koruyarak minimum duruş süresi ile hizmet veriyoruz.',
 			image: '/images/boylama-hatti-tasima.jpeg'
 		},
 		{
 			icon: 'wrench',
 			iconColor: '#1976D2',
 			iconBg: 'from-[#1976D220] to-[#1976D210]',
-			title: 'Bakim ve Revizyon',
-			description: 'Mevcut sistemlerin periyodik bakimi, yedek parca temini ve performans iyilestirme.',
+			title: 'Bakım & Revizyon',
+			description: 'Boylama ve taşıma sistemleriniz için periyodik bakım, parça değişimi, kapasite artırımı ve performans iyileştirme hizmetleri sunuyoruz. Sistemlerinizin ömrünü uzatıyoruz.',
 			image: '/images/bakim-revizyon.jpeg'
 		},
 		{
 			icon: 'cog',
 			iconColor: '#2DD4BF',
 			iconBg: 'from-[#2DD4BF20] to-[#2DD4BF10]',
-			title: 'Yeni Makine Imalati',
-			description: 'Ihtiyaca ozel tasarim ve uretim ile kapasite arttirma cozumleri sunuyoruz.',
+			title: 'Yeni Makine İmalatı',
+			description: 'İhtiyaca özel tasarlanan yeni makineler ile üretim süreçlerinizi bir üst seviyeye taşıyoruz. Kapasite, ürün çeşidi ve tesis yapınıza göre özel çözümler üretiyoruz.',
 			image: '/images/hizmetlerimiz.png'
 		}
 	];
@@ -149,7 +149,7 @@
 					{mounted ? 'animate-fade-in-up' : 'opacity-0'}"
 			>
 				<span class="w-[6px] h-[6px] rounded-full bg-[var(--iltas-green)] animate-pulse-soft"></span>
-				<span class="text-[10px] md:text-[11px] font-semibold text-white tracking-[0.5px]">2020'den beri guvenilir cozum ortagi</span>
+				<span class="text-[10px] md:text-[11px] font-semibold text-white tracking-[0.5px]">2020'den beri güvenilir çözüm ortağı</span>
 			</div>
 
 			<!-- Title -->
@@ -157,7 +157,7 @@
 				class="text-3xl md:text-[54px] font-extrabold text-white leading-[1.1] md:leading-[1.05]
 					{mounted ? 'animate-fade-in-up delay-100' : 'opacity-0'}"
 			>
-				Boylama Sistemlerinde<br><span class="gradient-text">Cozum Ortaginiz</span>
+				Meyve & Sebze Boylama Sistemlerinde<br><span class="gradient-text">Güvenilir Çözüm Ortağınız</span>
 			</h1>
 
 			<!-- Subtitle -->
@@ -165,7 +165,7 @@
 				class="text-sm md:text-[17px] text-white/80 leading-[1.6] md:leading-[1.7] max-w-[520px]
 					{mounted ? 'animate-fade-in-up delay-200' : 'opacity-0'}"
 			>
-				Meyve ve sebze isleme tesisleriniz icin profesyonel boylama hatti tasima, bakim, revizyon ve kapasite arttirma cozumleri sunuyoruz.
+				Boylama hatlarından komple tesis çözümlerine kadar; üretim kapasitenizi artıran, iş akışınızı optimize eden ve kaliteyi standart hâline getiren özel sistemler tasarlıyor, kuruyor ve geliştiriyoruz.
 			</p>
 
 			<!-- CTAs -->
@@ -180,7 +180,7 @@
 					<svg class="w-4 h-4 transition-transform duration-300 group-hover:rotate-12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
 						<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
 					</svg>
-					Hemen Iletisime Gecin
+					Teklif Al
 				</a>
 				<a
 					href="/projeler"
@@ -189,7 +189,7 @@
 					<svg class="w-4 h-4 transition-transform duration-300 group-hover:scale-110" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
 						<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
 					</svg>
-					Projelerimizi Inceleyin
+					Projelerimizi İncele
 				</a>
 			</div>
 		</div>
@@ -234,9 +234,9 @@
 				{isVisible('services') ? 'animate-fade-in-up' : 'opacity-0'}"
 		>
 			<span class="text-xs font-bold text-[var(--iltas-green)] tracking-[2px]">HIZMETLERIMIZ</span>
-			<h2 class="text-2xl md:text-4xl font-extrabold text-[var(--iltas-dark)]">Uzman Cozumlerimiz</h2>
+			<h2 class="text-2xl md:text-4xl font-extrabold text-[var(--iltas-dark)]">Üretim Hattınız İçin Uçtan Uca Çözümler</h2>
 			<p class="text-sm md:text-base text-[var(--iltas-gray)] leading-[1.6] max-w-[500px]">
-				Boylama, on boylama, paketleme hatlarinizda sizin ihtiyaciniz olan sistemi biliyor ve dunya capinda size uygun olan sistemi getiriyoruz.
+				ILTAS olarak; mevcut sistemlerinizi geliştiren, yeni yatırımlarınızı güvenle hayata geçiren ve operasyonel sürekliliği sağlayan kapsamlı hizmetler sunuyoruz.
 			</p>
 		</div>
 
@@ -300,16 +300,16 @@
 		>
 			<div class="flex flex-col gap-3 md:gap-[14px]">
 				<span class="text-xs font-bold text-[var(--iltas-blue)] tracking-[2px]">PROJELER</span>
-				<h2 class="text-2xl md:text-4xl font-extrabold text-[var(--iltas-dark)]">Tamamlanan Projeler</h2>
+				<h2 class="text-2xl md:text-4xl font-extrabold text-[var(--iltas-dark)]">Başarıyla Tamamladığımız Bazı Projeler</h2>
 				<p class="text-sm md:text-base text-[var(--iltas-gray)]">
-					Turkiye genelinde gerceklestirdigimiz basarili projelerimizden ornekler
+					Farklı ölçeklerdeki işletmeler için gerçekleştirdiğimiz projeler, teknik uzmanlığımızın ve sahadaki tecrübemizin bir yansımasıdır.
 				</p>
 			</div>
 			<a
 				href="/projeler"
 				class="hidden md:flex items-center gap-2 text-[var(--iltas-green)] font-medium hover:gap-3 transition-all duration-300"
 			>
-				Tum Projeler
+				Tüm Projeleri Gör
 				<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
 					<path d="M5 12h14M12 5l7 7-7 7"/>
 				</svg>
@@ -347,7 +347,7 @@
 			href="/projeler"
 			class="md:hidden flex items-center justify-center gap-2 py-3 text-[var(--iltas-green)] font-medium"
 		>
-			Tum Projeleri Gor
+			Tüm Projeleri Gör
 			<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
 				<path d="M5 12h14M12 5l7 7-7 7"/>
 			</svg>
@@ -361,7 +361,7 @@
 		class="flex flex-col items-center gap-5 md:gap-[30px] px-5 md:px-[50px] py-10 md:py-[45px] bg-[var(--iltas-bg-green)] border-t border-[var(--iltas-border)]
 			{isVisible('references') ? 'animate-fade-in' : 'opacity-0'}"
 	>
-		<span class="text-[11px] font-semibold text-[var(--iltas-gray)] tracking-[2px]">REFERANSLARIMIZ</span>
+		<span class="text-[11px] font-semibold text-[var(--iltas-gray)] tracking-[2px]">BİZE GÜVENEN FİRMALAR</span>
 		<div class="flex items-center justify-center gap-4 md:gap-10 flex-wrap">
 			{#each references as ref, i}
 				<span
@@ -393,7 +393,7 @@
 					<svg class="w-[18px] h-[18px] transition-transform duration-300 group-hover:rotate-12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
 						<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
 					</svg>
-					Hemen Iletisime Gecin
+					Teklif Al
 				</a>
 				<a
 					href="mailto:info@iltasmakine.com"
@@ -402,11 +402,11 @@
 					<svg class="w-[18px] h-[18px] transition-transform duration-300 group-hover:scale-110" fill="none" stroke="var(--iltas-gray-light)" stroke-width="2" viewBox="0 0 24 24">
 						<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
 					</svg>
-					E-posta Gonderin
+					E-posta Gönderin
 				</a>
 			</div>
 			<div class="flex flex-col gap-2 text-center md:text-right">
-				<h3 class="text-xl md:text-[26px] font-bold text-white">Projeniz icin ucretsiz kesif ve teklif alin</h3>
+				<h3 class="text-xl md:text-[26px] font-bold text-white">Projeniz için ücretsiz keşif ve teklif alın</h3>
 				<p class="text-sm md:text-[15px] text-[var(--iltas-gray-light)]">Uzman ekibimiz en kisa surede sizinle iletisime gececektir.</p>
 			</div>
 		</div>

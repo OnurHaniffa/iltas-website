@@ -81,13 +81,13 @@
 			class="text-2xl md:text-[46px] font-extrabold text-[var(--iltas-dark)] leading-[1.2] md:leading-[1.1] text-center max-w-[700px]
 				{mounted ? 'animate-fade-in-up delay-100' : 'opacity-0'}"
 		>
-			Your Partner in<br><span class="gradient-text">Sorting Systems</span>
+			Who We Are
 		</h1>
 		<p
 			class="text-sm md:text-[17px] text-[var(--iltas-gray)] leading-[1.6] text-center max-w-[600px]
 				{mounted ? 'animate-fade-in-up delay-200' : 'opacity-0'}"
 		>
-			Since 2020, we have been providing professional sorting solutions to fruit and vegetable processing facilities across Turkey.
+			Since 2020, ILTAS has been empowering fruit and vegetable processors with cutting-edge grading, conveying, and handling solutions. We are engineers and problem-solvers at heart — delivering bespoke equipment that's built to perform.
 		</p>
 	</section>
 
@@ -111,10 +111,10 @@
 				A Company Built on Quality and Trust
 			</h2>
 			<p class="text-sm md:text-[15px] text-[var(--iltas-gray)] leading-[1.7]">
-				ILTAS Sorting and Harvesting Systems was founded in 2020 by engineers specialized in the fruit and vegetable processing sector. Our goal is to provide world-class sorting and packaging solutions to agricultural enterprises in Turkey.
+				Our mission is simple: Deliver reliable, high-performance systems / Improve operational efficiency / Provide seamless service from concept to completion
 			</p>
 			<p class="text-sm md:text-[15px] text-[var(--iltas-gray)] leading-[1.7]">
-				Since our establishment, we have successfully completed more than 30 projects and prioritized customer satisfaction in each one. Our technical team works to deliver the highest quality in every project.
+				With industry experience and deep technical expertise, ILTAS supports growers, packhouses, and producers across Türkiye with turnkey solutions tailored to your needs.
 			</p>
 		</div>
 	</section>

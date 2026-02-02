@@ -50,24 +50,24 @@
 			icon: 'truck',
 			iconColor: '#18A058',
 			iconBg: 'from-[#18A05820] to-[#18A05810]',
-			title: 'Sorting Line Relocation',
-			description: 'Safe dismantling, transportation and installation services for second-hand sorting lines.',
+			title: 'Grading Line Relocation',
+			description: 'We safely dismantle, transport, and reinstall second-hand or existing grading lines — minimizing downtime and maximising return on equipment investment.',
 			image: '/images/boylama-hatti-tasima.jpeg'
 		},
 		{
 			icon: 'wrench',
 			iconColor: '#1976D2',
 			iconBg: 'from-[#1976D220] to-[#1976D210]',
-			title: 'Maintenance & Revision',
-			description: 'Periodic maintenance, spare parts supply and performance improvement for existing systems.',
+			title: 'Maintenance & Overhaul',
+			description: 'Keep your systems in peak condition. We offer scheduled maintenance, spare parts supply, performance upgrades, and full system refurbishment to extend lifetime and reliability.',
 			image: '/images/bakim-revizyon.jpeg'
 		},
 		{
 			icon: 'cog',
 			iconColor: '#2DD4BF',
 			iconBg: 'from-[#2DD4BF20] to-[#2DD4BF10]',
-			title: 'Custom Manufacturing',
-			description: 'Custom design and production with capacity enhancement solutions.',
+			title: 'Custom Machine Design & Build',
+			description: 'Need higher capacity or a specialised function? We custom-engineer and manufacture new machines tailored to your exact workflow requirements.',
 			image: '/images/hizmetlerimiz.png'
 		}
 	];
@@ -155,14 +155,14 @@
 				class="text-3xl md:text-[54px] font-extrabold text-white leading-[1.1] md:leading-[1.05]
 					{mounted ? 'animate-fade-in-up delay-100' : 'opacity-0'}"
 			>
-				Your Partner in<br><span class="gradient-text">Sorting Systems</span>
+				Your Trusted Partner in<br><span class="gradient-text">Fruit & Vegetable Grading Systems</span>
 			</h1>
 
 			<p
 				class="text-sm md:text-[17px] text-white/80 leading-[1.6] md:leading-[1.7] max-w-[520px]
 					{mounted ? 'animate-fade-in-up delay-200' : 'opacity-0'}"
 			>
-				We provide professional sorting line relocation, maintenance, revision and capacity enhancement solutions for your fruit and vegetable processing facilities.
+				We design, install, maintain, and upgrade bespoke grading systems that elevate your production capacity, optimise workflow, and maximise quality — from sorting lines to full process automation.
 			</p>
 
 			<div
@@ -176,7 +176,7 @@
 					<svg class="w-4 h-4 transition-transform duration-300 group-hover:rotate-12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
 						<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
 					</svg>
-					Get In Touch
+					Get a Custom Quote
 				</a>
 				<a
 					href="/en/projects"
@@ -185,7 +185,7 @@
 					<svg class="w-4 h-4 transition-transform duration-300 group-hover:scale-110" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
 						<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
 					</svg>
-					View Our Projects
+					Explore Our Projects
 				</a>
 			</div>
 		</div>
@@ -229,9 +229,9 @@
 				{isVisible('services') ? 'animate-fade-in-up' : 'opacity-0'}"
 		>
 			<span class="text-xs font-bold text-[var(--iltas-green)] tracking-[2px]">OUR SERVICES</span>
-			<h2 class="text-2xl md:text-4xl font-extrabold text-[var(--iltas-dark)]">Expert Solutions</h2>
+			<h2 class="text-2xl md:text-4xl font-extrabold text-[var(--iltas-dark)]">Comprehensive Solutions for Your Production Line</h2>
 			<p class="text-sm md:text-base text-[var(--iltas-gray)] leading-[1.6] max-w-[500px]">
-				We know the system you need for your sorting, pre-sorting and packaging lines and bring you the right system from around the world.
+				At ILTAS, we cover every stage of your production needs — from relocation and installation to maintenance and custom engineering. Our services are crafted around your business goals and technical challenges.
 			</p>
 		</div>
 
@@ -294,16 +294,16 @@
 		>
 			<div class="flex flex-col gap-3 md:gap-[14px]">
 				<span class="text-xs font-bold text-[var(--iltas-blue)] tracking-[2px]">PROJECTS</span>
-				<h2 class="text-2xl md:text-4xl font-extrabold text-[var(--iltas-dark)]">Completed Projects</h2>
+				<h2 class="text-2xl md:text-4xl font-extrabold text-[var(--iltas-dark)]">Our Successful Projects</h2>
 				<p class="text-sm md:text-base text-[var(--iltas-gray)]">
-					Examples from our successful projects across Turkey
+					We're proud to have delivered impactful solutions for leading growers and facilities across the country. Each project reflects our commitment to quality, technical excellence, and operational results.
 				</p>
 			</div>
 			<a
 				href="/en/projects"
 				class="hidden md:flex items-center gap-2 text-[var(--iltas-green)] font-medium hover:gap-3 transition-all duration-300"
 			>
-				All Projects
+				View All Projects
 				<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
 					<path d="M5 12h14M12 5l7 7-7 7"/>
 				</svg>
@@ -355,7 +355,7 @@
 		class="flex flex-col items-center gap-5 md:gap-[30px] px-5 md:px-[50px] py-10 md:py-[45px] bg-[var(--iltas-bg-green)] border-t border-[var(--iltas-border)]
 			{isVisible('references') ? 'animate-fade-in' : 'opacity-0'}"
 	>
-		<span class="text-[11px] font-semibold text-[var(--iltas-gray)] tracking-[2px]">OUR REFERENCES</span>
+		<span class="text-[11px] font-semibold text-[var(--iltas-gray)] tracking-[2px]">TRUSTED BY</span>
 		<div class="flex items-center justify-center gap-4 md:gap-10 flex-wrap">
 			{#each references as ref, i}
 				<span
@@ -387,7 +387,7 @@
 					<svg class="w-[18px] h-[18px] transition-transform duration-300 group-hover:rotate-12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
 						<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
 					</svg>
-					Get In Touch
+					Get a Custom Quote
 				</a>
 				<a
 					href="mailto:info@iltasmakine.com"

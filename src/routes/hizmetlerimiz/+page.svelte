@@ -9,8 +9,8 @@
 		{
 			num: '01',
 			numColor: '#18A058',
-			title: 'Boylama Hatti Tasima',
-			description: 'Ikinci el bir boylama hatti ariyorsaniz, ya da buldunuz ve sokulerek yeniden kurulmasi gerekiyorsa; ILTAS Boylama ve Hasat Sistemleri bu konuda uzman! Profesyonel ekibimiz ile guvenli sokum, nakliye ve yeni lokasyonda kurulum hizmetleri sunuyoruz.',
+			title: 'Boylama Hattı Taşıma',
+			description: 'Mevcut veya ikinci el boylama hatlarının söküm, taşıma ve yeniden kurulum işlemlerini güvenli ve planlı şekilde gerçekleştiriyoruz. Makinenizin değerini koruyarak minimum duruş süresi ile hizmet veriyoruz.',
 			image: '/images/boylama-hatti-tasima.jpeg',
 			items: [
 				'Profesyonel sokum ve kurulum',
@@ -25,8 +25,8 @@
 		{
 			num: '02',
 			numColor: '#1976D2',
-			title: 'Bakim ve Revizyon',
-			description: 'Mevcut boylama hattinizda kapasite artisi icin bir cozume ihtiyac duyuyorsaniz, ILTAS Boylama ve Hasat Sistemleri bu konuda uzman. Periyodik bakim, teknoloji guncelleme ve 7/24 teknik destek ile sisteminizi her zaman en verimli sekilde calisir halde tutuyoruz.',
+			title: 'Bakım & Revizyon',
+			description: 'Boylama ve taşıma sistemleriniz için periyodik bakım, parça değişimi, kapasite artırımı ve performans iyileştirme hizmetleri sunuyoruz. Sistemlerinizin ömrünü uzatıyoruz.',
 			image: '/images/bakim-revizyon.jpeg',
 			items: [
 				'Periyodik bakim programlari',
@@ -41,8 +41,8 @@
 		{
 			num: '03',
 			numColor: '#2DD4BF',
-			title: 'Ihtiyaca Yonelik Yeni Imalat',
-			description: 'Boylama, on boylama, paketleme hatlarinizda sizin ihtiyaciniz olan sistemi biliyor ve dunya capinda size uygun olan sistemi getiriyoruz. Ozel tasarim makine imalati ve anahtar teslim proje yonetimi ile kapasite arttirma cozumleri sunuyoruz.',
+			title: 'Yeni Makine İmalatı',
+			description: 'İhtiyaca özel tasarlanan yeni makineler ile üretim süreçlerinizi bir üst seviyeye taşıyoruz. Kapasite, ürün çeşidi ve tesis yapınıza göre özel çözümler üretiyoruz.',
 			image: '/images/hizmetlerimiz.png',
 			items: [
 				'Ozel tasarim makine imalati',
@@ -101,13 +101,13 @@
 			class="text-2xl md:text-5xl text-[var(--iltas-dark)] text-center font-extrabold
 				{mounted ? 'animate-fade-in-up delay-100' : 'opacity-0'}"
 		>
-			Profesyonel Boylama Cozumleri
+			Üretim Hattınız İçin Uçtan Uca Çözümler
 		</h1>
 		<p
 			class="text-sm md:text-lg text-[var(--iltas-gray)] leading-[1.6] text-center max-w-[600px]
 				{mounted ? 'animate-fade-in-up delay-200' : 'opacity-0'}"
 		>
-			Meyve ve sebze isleme tesisleriniz icin kapsamli hizmetler sunuyoruz
+			ILTAS olarak; mevcut sistemlerinizi geliştiren, yeni yatırımlarınızı güvenle hayata geçiren ve operasyonel sürekliliği sağlayan kapsamlı hizmetler sunuyoruz.
 		</p>
 	</section>
 

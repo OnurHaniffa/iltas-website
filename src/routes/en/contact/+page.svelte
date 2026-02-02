@@ -27,7 +27,7 @@
 			iconColor: '#2DD4BF',
 			iconBg: 'bg-[#2DD4BF20]',
 			label: 'Address',
-			value: 'Sanayi mah. 3210 sk. No:10, Isparta/Merkez, Turkey',
+			value: 'Sanayi Mah. 3210 Sk. No:10, Isparta / Turkey',
 			href: '#'
 		},
 		{
@@ -82,9 +82,9 @@
 		>
 			<div class="flex flex-col gap-3 md:gap-4">
 				<span class="text-xs font-medium text-[var(--iltas-green)] tracking-[2px] font-semibold">CONTACT</span>
-				<h1 class="text-2xl md:text-[42px] text-[var(--iltas-dark)] font-extrabold leading-tight">Get in Touch</h1>
+				<h1 class="text-2xl md:text-[42px] text-[var(--iltas-dark)] font-extrabold leading-tight">Start Your Next Project with Us</h1>
 				<p class="text-sm md:text-base text-[var(--iltas-gray)] leading-[1.6] max-w-[400px]">
-					Contact us for free site assessment and quotation for your projects. Our expert team will get back to you as soon as possible.
+					Have a requirement, plan, or question? Let's talk. Our team responds quickly and will help you take the first step — whether it's a quote, technical consultation, or site assessment.
 				</p>
 			</div>
 

@@ -89,13 +89,13 @@
 			class="text-2xl md:text-5xl text-[var(--iltas-dark)] text-center font-extrabold
 				{mounted ? 'animate-fade-in-up delay-100' : 'opacity-0'}"
 		>
-			Basari Hikayelerimiz
+			Başarıyla Tamamladığımız Bazı Projeler
 		</h1>
 		<p
 			class="text-sm md:text-lg text-[var(--iltas-gray)] text-center
 				{mounted ? 'animate-fade-in-up delay-200' : 'opacity-0'}"
 		>
-			Turkiye genelinde gerceklestirdigimiz 30'dan fazla projeden ornekler
+			Farklı ölçeklerdeki işletmeler için gerçekleştirdiğimiz projeler, teknik uzmanlığımızın ve sahadaki tecrübemizin bir yansımasıdır. Her proje, verimlilik ve kalite odaklı olarak hayata geçirilmiştir.
 		</p>
 	</section>
 

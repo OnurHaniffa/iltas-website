@@ -27,7 +27,7 @@
 			iconColor: '#2DD4BF',
 			iconBg: 'bg-[#2DD4BF20]',
 			label: 'Adres',
-			value: 'Sanayi mah. 3210 sk. No:10, Isparta/Merkez',
+			value: 'Sanayi Mah. 3210 Sk. No:10, Isparta / Türkiye',
 			href: '#'
 		},
 		{
@@ -82,9 +82,9 @@
 		>
 			<div class="flex flex-col gap-3 md:gap-4">
 				<span class="text-xs font-medium text-[var(--iltas-green)] tracking-[2px] font-semibold">ILETISIM</span>
-				<h1 class="text-2xl md:text-[42px] text-[var(--iltas-dark)] font-extrabold leading-tight">Bizimle Iletisime Gecin</h1>
+				<h1 class="text-2xl md:text-[42px] text-[var(--iltas-dark)] font-extrabold leading-tight">Bizimle İletişime Geçin</h1>
 				<p class="text-sm md:text-base text-[var(--iltas-gray)] leading-[1.6] max-w-[400px]">
-					Projeleriniz icin ucretsiz kesif ve fiyat teklifi almak icin bize ulasin. Uzman ekibimiz en kisa surede sizinle iletisime gececektir.
+					Yeni bir yatırım, mevcut hattınız için geliştirme veya teknik destek ihtiyacınız mı var? Ekibimizle iletişime geçin, size en uygun çözümü birlikte planlayalım.
 				</p>
 			</div>
 

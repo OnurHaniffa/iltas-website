@@ -81,13 +81,13 @@
 			class="text-2xl md:text-[46px] font-extrabold text-[var(--iltas-dark)] leading-[1.2] md:leading-[1.1] text-center max-w-[700px]
 				{mounted ? 'animate-fade-in-up delay-100' : 'opacity-0'}"
 		>
-			Boylama Sistemlerinde<br><span class="gradient-text">Cozum Ortaginiz</span>
+			Hakkımızda
 		</h1>
 		<p
 			class="text-sm md:text-[17px] text-[var(--iltas-gray)] leading-[1.6] text-center max-w-[600px]
 				{mounted ? 'animate-fade-in-up delay-200' : 'opacity-0'}"
 		>
-			2020 yilindan bu yana Turkiye genelinde meyve ve sebze isleme tesislerine profesyonel boylama cozumleri sunuyoruz.
+			ILTAS, 2020 yılından bu yana meyve ve sebze işleme sektörüne yönelik boylama, taşıma ve otomasyon çözümleri sunmaktadır. Mühendislik temelli yaklaşımımızla, her tesisin ihtiyacına özel sistemler geliştiriyoruz.
 		</p>
 	</section>
 
@@ -108,13 +108,13 @@
 		>
 			<span class="text-xs font-bold text-[var(--iltas-green)] tracking-[2px]">HIKAYEMIZ</span>
 			<h2 class="text-xl md:text-[30px] font-extrabold text-[var(--iltas-dark)] leading-[1.3]">
-				Kalite ve Guven Uzerine Kurulu Bir Sirket
+				Kalite ve Güven Üzerine Kurulu Bir Şirket
 			</h2>
 			<p class="text-sm md:text-[15px] text-[var(--iltas-gray)] leading-[1.7]">
-				ILTAS Boylama ve Hasat Sistemleri, 2020 yilinda meyve ve sebze isleme sektorunde uzmanlasmis muhendisler tarafindan kurulmustur. Amacimiz, Turkiye'deki tarim isletmelerine dunya standartlarinda boylama ve paketleme cozumleri sunmaktir.
+				Amacımız; Verimli ve sürdürülebilir çözümler üretmek / Üretim süreçlerini daha güvenilir hâle getirmek / Projelere baştan sona sorunsuz hizmet sunmak
 			</p>
 			<p class="text-sm md:text-[15px] text-[var(--iltas-gray)] leading-[1.7]">
-				Kurulusumuzdan bu yana 30'dan fazla projeyi basariyla tamamladik ve her birinde musteri memnuniyetini on planda tuttuk. Teknik ekibimiz, her projede en yuksek kaliteyi sunmak icin calisir.
+				Tecrübeli ekibimizle; kurulumdan revizyona, taşımadan yeni makine imalatına kadar tüm süreçlerde çözüm ortağınız oluyoruz.
 			</p>
 		</div>
 	</section>

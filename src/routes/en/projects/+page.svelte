@@ -89,13 +89,13 @@
 			class="text-2xl md:text-5xl text-[var(--iltas-dark)] text-center font-extrabold
 				{mounted ? 'animate-fade-in-up delay-100' : 'opacity-0'}"
 		>
-			Our Success Stories
+			Our Successful Projects
 		</h1>
 		<p
 			class="text-sm md:text-lg text-[var(--iltas-gray)] text-center
 				{mounted ? 'animate-fade-in-up delay-200' : 'opacity-0'}"
 		>
-			Examples from over 30 projects we have completed across Turkey
+			We're proud to have delivered impactful solutions for leading growers and facilities across the country. Each project reflects our commitment to quality, technical excellence, and operational results.
 		</p>
 	</section>
 
