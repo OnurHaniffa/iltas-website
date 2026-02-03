@@ -202,7 +202,7 @@
 						id="phone"
 						name="phone"
 						value={form?.phone ?? ''}
-						placeholder="Telefon numaranızı girin"
+						placeholder="+90 555 123 4567"
 						class="h-11 md:h-12 px-4 bg-[var(--iltas-bg-alt)] rounded-lg border text-sm text-[var(--iltas-dark)] placeholder:text-[var(--iltas-gray-light)] transition-all duration-300 focus:outline-none focus:border-[var(--iltas-green)] focus:ring-2 focus:ring-[var(--iltas-green-light)] {form?.errors?.phone ? 'border-red-400' : 'border-[var(--iltas-border)]'}"
 					/>
 					{#if form?.errors?.phone}<span class="text-xs text-red-500">{form.errors.phone}</span>{/if}
