@@ -18,6 +18,17 @@
 		{ href: '/en/contact', label: 'Contact', key: 'contact' }
 	];
 
+	// Map English pages to Turkish equivalents
+	const langSwitchMap: Record<string, string> = {
+		'home': '/',
+		'about': '/hakkimizda',
+		'services': '/hizmetlerimiz',
+		'projects': '/projeler',
+		'contact': '/iletisim'
+	};
+
+	let langSwitchHref = $derived(langSwitchMap[activePage] || '/');
+
 	onMount(() => {
 		mounted = true;
 		const handleScroll = () => {
@@ -71,7 +82,7 @@
 				{item.label}
 			</a>
 		{/each}
-		<a href="/" class="text-sm font-medium text-[var(--iltas-green)] hover:underline">TR</a>
+		<a href={langSwitchHref} class="text-sm font-medium text-[var(--iltas-green)] hover:underline">TR</a>
 	</nav>
 
 	<!-- Desktop CTA Button -->
@@ -129,7 +140,7 @@
 		{/each}
 
 		<a
-			href="/"
+			href={langSwitchHref}
 			onclick={closeMobileMenu}
 			class="flex items-center gap-3 px-4 py-3 rounded-lg text-base font-medium text-[var(--iltas-green)]"
 		>
