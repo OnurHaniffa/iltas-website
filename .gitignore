@@ -5,6 +5,7 @@ node_modules
 *.docx
 *.code-workspace
 screenshots/
+Screenshot*.png
 WhatsApp Image*.jpeg
 Sade Tarım.JPEG
 ozgoktaslar.jpeg
