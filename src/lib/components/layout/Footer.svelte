@@ -25,11 +25,12 @@
 	<div class="flex flex-col lg:flex-row lg:justify-between gap-10 lg:gap-0 px-5 md:px-[50px] pt-[30px]">
 		<!-- Brand Section -->
 		<div class="flex flex-col gap-5">
-			<a href="/" class="flex items-center gap-[10px] group w-fit">
-				<span class="text-2xl md:text-[28px] font-extrabold text-white tracking-[-0.5px] transition-colors duration-300 group-hover:text-[var(--iltas-green)]">
-					ILTAS
-				</span>
-				<span class="w-[10px] h-[10px] rounded-full bg-[var(--iltas-green)] transition-transform duration-300 group-hover:scale-150 group-hover:animate-pulse-soft"></span>
+			<a href="/" class="flex items-center group w-fit">
+				<img
+					src="/images/iltas-logo.png"
+					alt="ILTAS"
+					class="h-7 md:h-8 w-auto brightness-0 invert"
+				/>
 			</a>
 			<p class="text-sm md:text-[15px] text-[var(--iltas-gray-light)] leading-[1.6] max-w-[280px]">
 				Boylama Sistemlerinde Çözüm Ortağınız

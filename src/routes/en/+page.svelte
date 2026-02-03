@@ -74,12 +74,12 @@
 
 	const projects = [
 		{
-			image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80',
+			image: '/images/ozgoktaslar-shd.jpeg',
 			title: 'OZGOKTASLAR SHD',
 			location: 'Turkey'
 		},
 		{
-			image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80',
+			image: '/images/sade-tarim.jpeg',
 			title: 'SADE TARIM',
 			location: 'Niğde, Turkey'
 		},
@@ -148,7 +148,7 @@
 
 	<!-- Hero Section -->
 	<section
-		class="relative flex flex-col justify-end min-h-[500px] md:h-[620px] px-5 md:px-[60px] pb-12 md:pb-20 bg-cover bg-center overflow-hidden"
+		class="relative flex flex-col justify-end min-h-[580px] md:min-h-[720px] px-5 md:px-[60px] pb-14 md:pb-24 bg-cover bg-center overflow-hidden"
 		style="background-image: url('/images/hero.jpeg');"
 	>
 		<div class="absolute inset-0 bg-gradient-to-t from-[#0F172AE0] via-[#0F172A80] to-[#0F172A30]"></div>

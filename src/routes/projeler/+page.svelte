@@ -7,13 +7,13 @@
 
 	const projects = [
 		{
-			image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80',
+			image: '/images/ozgoktaslar-shd.jpeg',
 			title: 'OZGOKTASLAR SHD',
 			location: 'Türkiye',
 			description: 'Komple boylama hattı taşıma ve kurulum projesi'
 		},
 		{
-			image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80',
+			image: '/images/sade-tarim.jpeg',
 			title: 'SADE TARIM',
 			location: 'Niğde, Türkiye',
 			description: 'Kapasite arttırma ve modernizasyon projesi'

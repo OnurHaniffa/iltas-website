@@ -48,12 +48,13 @@
 		{mounted ? 'animate-fade-in-down' : 'opacity-0'}"
 >
 	<!-- Logo -->
-	<a href="/" class="flex items-center gap-[10px] group">
-		<span class="text-xl md:text-[22px] font-extrabold tracking-[-0.5px] transition-colors duration-300 group-hover:text-[var(--iltas-green)]
-			{scrolled || activePage !== 'home' ? 'text-[var(--iltas-dark)]' : 'text-white'}">
-			ILTAS
-		</span>
-		<span class="w-2 h-2 rounded-full bg-[var(--iltas-green)] transition-transform duration-300 group-hover:scale-150"></span>
+	<a href="/" class="flex items-center group">
+		<img
+			src="/images/iltas-logo.png"
+			alt="ILTAS"
+			class="h-6 md:h-7 w-auto transition-all duration-300
+				{scrolled || activePage !== 'home' ? '' : 'brightness-0 invert'}"
+		/>
 	</a>
 
 	<!-- Desktop Navigation -->

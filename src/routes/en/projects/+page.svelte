@@ -7,13 +7,13 @@
 
 	const projects = [
 		{
-			image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80',
+			image: '/images/ozgoktaslar-shd.jpeg',
 			title: 'OZGOKTASLAR SHD',
 			location: 'Turkey',
 			description: 'Complete sorting line relocation and installation project'
 		},
 		{
-			image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80',
+			image: '/images/sade-tarim.jpeg',
 			title: 'SADE TARIM',
 			location: 'Nigde, Turkey',
 			description: 'Capacity enhancement and modernization project'
