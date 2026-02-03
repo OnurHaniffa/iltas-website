@@ -2,4 +2,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://iltasmakine.com/sitemap.xml
+Sitemap: https://www.iltasmakine.com/sitemap.xml
