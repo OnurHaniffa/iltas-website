@@ -1,5 +1,15 @@
 node_modules
 
+# Source files / working files
+*.doc
+*.docx
+*.code-workspace
+screenshots/
+WhatsApp Image*.jpeg
+Sade Tarım.JPEG
+ozgoktaslar.jpeg
+static/images/iltas-logo.jpeg
+
 # Output
 .output
 .vercel
