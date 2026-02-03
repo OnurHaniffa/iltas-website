@@ -88,13 +88,14 @@
 	<meta property="og:title" content="Hizmetlerimiz - ILTAS | Boylama Hattı Taşıma, Bakım & Yeni İmalat" />
 	<meta property="og:description" content="Boylama hattı taşıma, bakım ve revizyon, yeni makine imalatı. ILTAS olarak üretim hattınız için uçtan uca profesyonel çözümler sunuyoruz." />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://iltas-website.vercel.app/hizmetlerimiz" />
+	<meta property="og:url" content="https://iltasmakine.com/hizmetlerimiz" />
 	<meta property="og:locale" content="tr_TR" />
 	<meta property="og:site_name" content="ILTAS" />
+	<meta property="og:image" content="https://iltasmakine.com/images/og-image.jpeg" />
 	<meta name="twitter:card" content="summary_large_image" />
-	<link rel="canonical" href="https://iltas-website.vercel.app/hizmetlerimiz" />
-	<link rel="alternate" hreflang="tr" href="https://iltas-website.vercel.app/hizmetlerimiz" />
-	<link rel="alternate" hreflang="en" href="https://iltas-website.vercel.app/en/services" />
+	<link rel="canonical" href="https://iltasmakine.com/hizmetlerimiz" />
+	<link rel="alternate" hreflang="tr" href="https://iltasmakine.com/hizmetlerimiz" />
+	<link rel="alternate" hreflang="en" href="https://iltasmakine.com/en/services" />
 </svelte:head>
 
 <div class="flex flex-col min-h-full bg-[var(--iltas-bg)]">

@@ -76,13 +76,14 @@
 	<meta property="og:title" content="Projelerimiz - ILTAS | Başarıyla Tamamlanan Boylama Projeleri" />
 	<meta property="og:description" content="Türkiye genelinde farklı ölçeklerdeki işletmeler için gerçekleştirdiğimiz boylama hattı taşıma, bakım ve imalat projelerimizi inceleyin." />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://iltas-website.vercel.app/projeler" />
+	<meta property="og:url" content="https://iltasmakine.com/projeler" />
 	<meta property="og:locale" content="tr_TR" />
 	<meta property="og:site_name" content="ILTAS" />
+	<meta property="og:image" content="https://iltasmakine.com/images/og-image.jpeg" />
 	<meta name="twitter:card" content="summary_large_image" />
-	<link rel="canonical" href="https://iltas-website.vercel.app/projeler" />
-	<link rel="alternate" hreflang="tr" href="https://iltas-website.vercel.app/projeler" />
-	<link rel="alternate" hreflang="en" href="https://iltas-website.vercel.app/en/projects" />
+	<link rel="canonical" href="https://iltasmakine.com/projeler" />
+	<link rel="alternate" hreflang="tr" href="https://iltasmakine.com/projeler" />
+	<link rel="alternate" hreflang="en" href="https://iltasmakine.com/en/projects" />
 </svelte:head>
 
 <div class="flex flex-col min-h-full bg-[var(--iltas-bg)]">

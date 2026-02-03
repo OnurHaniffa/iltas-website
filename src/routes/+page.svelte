@@ -136,13 +136,14 @@
 	<meta property="og:title" content="ILTAS - Meyve & Sebze Boylama Sistemleri | Güvenilir Çözüm Ortağınız" />
 	<meta property="og:description" content="ILTAS, meyve ve sebze boylama hatlarında taşıma, bakım, revizyon ve yeni makine imalatı çözümleri sunar. 2020'den beri güvenilir çözüm ortağınız." />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://iltas-website.vercel.app/" />
+	<meta property="og:url" content="https://iltasmakine.com/" />
 	<meta property="og:locale" content="tr_TR" />
 	<meta property="og:site_name" content="ILTAS" />
+	<meta property="og:image" content="https://iltasmakine.com/images/og-image.jpeg" />
 	<meta name="twitter:card" content="summary_large_image" />
-	<link rel="canonical" href="https://iltas-website.vercel.app/" />
-	<link rel="alternate" hreflang="tr" href="https://iltas-website.vercel.app/" />
-	<link rel="alternate" hreflang="en" href="https://iltas-website.vercel.app/en" />
+	<link rel="canonical" href="https://iltasmakine.com/" />
+	<link rel="alternate" hreflang="tr" href="https://iltasmakine.com/" />
+	<link rel="alternate" hreflang="en" href="https://iltasmakine.com/en" />
 </svelte:head>
 
 <div class="flex flex-col min-h-full bg-[var(--iltas-bg)]">

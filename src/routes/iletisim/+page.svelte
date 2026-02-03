@@ -75,13 +75,14 @@
 	<meta property="og:title" content="İletişim - ILTAS | Ücretsiz Keşif ve Teklif Alın" />
 	<meta property="og:description" content="ILTAS ile iletişime geçin. Boylama sistemleri için ücretsiz keşif ve teklif alın. Adres: Sanayi Mah., Isparta. Tel: +90 554 550 4450." />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://iltas-website.vercel.app/iletisim" />
+	<meta property="og:url" content="https://iltasmakine.com/iletisim" />
 	<meta property="og:locale" content="tr_TR" />
 	<meta property="og:site_name" content="ILTAS" />
+	<meta property="og:image" content="https://iltasmakine.com/images/og-image.jpeg" />
 	<meta name="twitter:card" content="summary_large_image" />
-	<link rel="canonical" href="https://iltas-website.vercel.app/iletisim" />
-	<link rel="alternate" hreflang="tr" href="https://iltas-website.vercel.app/iletisim" />
-	<link rel="alternate" hreflang="en" href="https://iltas-website.vercel.app/en/contact" />
+	<link rel="canonical" href="https://iltasmakine.com/iletisim" />
+	<link rel="alternate" hreflang="tr" href="https://iltasmakine.com/iletisim" />
+	<link rel="alternate" hreflang="en" href="https://iltasmakine.com/en/contact" />
 </svelte:head>
 
 <div class="flex flex-col min-h-full bg-[var(--iltas-bg)]">
