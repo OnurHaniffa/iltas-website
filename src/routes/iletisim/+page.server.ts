@@ -1,5 +1,6 @@
 import type { Actions } from './$types';
 import { fail } from '@sveltejs/kit';
+import { sendContactEmail } from '$lib/server/email';
 
 export const actions: Actions = {
 	default: async ({ request }) => {
@@ -23,10 +24,18 @@ export const actions: Actions = {
 			return fail(400, { errors, name, email, phone, message });
 		}
 
-		// TODO: Integrate with email service (e.g. Resend, SendGrid, or SMTP)
-		// For now, log the submission and return success
-		console.log('Contact form submission:', { name, email, phone, message });
-
-		return { success: true };
+		try {
+			await sendContactEmail({ name, email, phone, message }, 'tr');
+			return { success: true };
+		} catch (error) {
+			console.error('Email send error:', error);
+			return fail(500, {
+				errors: { form: 'Mesaj gönderilemedi. Lütfen daha sonra tekrar deneyin.' },
+				name,
+				email,
+				phone,
+				message
+			});
+		}
 	}
 };
