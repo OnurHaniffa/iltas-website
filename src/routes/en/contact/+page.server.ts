@@ -2,6 +2,40 @@ import type { Actions } from './$types';
 import { fail } from '@sveltejs/kit';
 import { sendContactEmail } from '$lib/server/email';
 
+// Phone validation: allows international formats like +90 555 123 4567, 05551234567, etc.
+function isValidPhone(phone: string): boolean {
+	if (!phone) return true; // Phone is optional
+	const cleaned = phone.replace(/[\s\-\(\)\.]/g, '');
+	// Must be 10-15 digits, optionally starting with +
+	return /^\+?\d{10,15}$/.test(cleaned);
+}
+
+// Message validation: must be at least 20 characters and have 4+ words
+function isValidMessage(message: string): { valid: boolean; reason?: string } {
+	if (message.length < 20) {
+		return { valid: false, reason: 'Your message must be at least 20 characters.' };
+	}
+
+	const wordCount = message.split(/\s+/).filter(word => word.length > 1).length;
+	if (wordCount < 4) {
+		return { valid: false, reason: 'Please write a more detailed message (at least 4 words).' };
+	}
+
+	// Check for gibberish (repeated characters like "asdfasdf" or "aaaaa")
+	const hasRepeatedPattern = /(.)\1{4,}/.test(message) || /(.{2,})\1{3,}/.test(message);
+	if (hasRepeatedPattern) {
+		return { valid: false, reason: 'Please enter a valid message.' };
+	}
+
+	return { valid: true };
+}
+
+// Name validation: at least 2 words (first + last name)
+function isValidName(name: string): boolean {
+	const parts = name.split(/\s+/).filter(part => part.length > 0);
+	return parts.length >= 2 && parts.every(part => part.length >= 2);
+}
+
 export const actions: Actions = {
 	default: async ({ request }) => {
 		const data = await request.formData();
@@ -12,13 +46,34 @@ export const actions: Actions = {
 
 		const errors: Record<string, string> = {};
 
-		if (!name) errors.name = 'Full name is required.';
+		// Name validation
+		if (!name) {
+			errors.name = 'Full name is required.';
+		} else if (!isValidName(name)) {
+			errors.name = 'Please enter your first and last name.';
+		}
+
+		// Email validation
 		if (!email) {
 			errors.email = 'Email is required.';
 		} else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
 			errors.email = 'Please enter a valid email address.';
 		}
-		if (!message) errors.message = 'Please enter your message.';
+
+		// Phone validation (optional but must be valid if provided)
+		if (phone && !isValidPhone(phone)) {
+			errors.phone = 'Please enter a valid phone number (e.g. +90 555 123 4567).';
+		}
+
+		// Message validation
+		if (!message) {
+			errors.message = 'Please enter your message.';
+		} else {
+			const messageCheck = isValidMessage(message);
+			if (!messageCheck.valid) {
+				errors.message = messageCheck.reason!;
+			}
+		}
 
 		if (Object.keys(errors).length > 0) {
 			return fail(400, { errors, name, email, phone, message });
