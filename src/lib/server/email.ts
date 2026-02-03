@@ -155,7 +155,7 @@ export async function sendContactEmail(data: ContactFormData, lang: 'tr' | 'en' 
 								Sanayi Mah. 3210 Sk. No:10, Isparta / ${lang === 'tr' ? 'Türkiye' : 'Turkey'}
 							</p>
 							<p style="margin: 8px 0 0 0; font-size: 12px; color: rgba(255,255,255,0.4);">
-								+90 554 550 4450 • info@iltas.com
+								+90 554 550 4450 • info@iltasmakine.com
 							</p>
 						</td>
 					</tr>
@@ -169,12 +169,19 @@ export async function sendContactEmail(data: ContactFormData, lang: 'tr' | 'en' 
 	`.trim();
 
 	const result = await resend.emails.send({
-		from: 'ILTAS Web <noreply@iltas.com>',
-		to: ['info@iltas.com'],
+		from: 'ILTAS Web <noreply@iltasmakine.com>',
+		to: ['info@iltasmakine.com'],
 		replyTo: email,
 		subject,
 		html
 	});
+
+	console.log('Resend result:', JSON.stringify(result, null, 2));
+
+	if (result.error) {
+		console.error('Resend error:', result.error);
+		throw new Error(result.error.message);
+	}
 
 	return result;
 }
