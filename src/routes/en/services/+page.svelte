@@ -92,7 +92,10 @@
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:site_name" content="ILTAS" />
 	<meta property="og:image" content="https://www.iltasmakine.com/images/og-image.jpeg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
 	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="https://www.iltasmakine.com/images/og-image.jpeg" />
 	<link rel="canonical" href="https://www.iltasmakine.com/en/services" />
 	<link rel="alternate" hreflang="tr" href="https://www.iltasmakine.com/hizmetlerimiz" />
 	<link rel="alternate" hreflang="en" href="https://www.iltasmakine.com/en/services" />
