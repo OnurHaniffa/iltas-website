@@ -76,17 +76,17 @@
 	<meta property="og:title" content="Projelerimiz - ILTAS | Başarıyla Tamamlanan Boylama Projeleri" />
 	<meta property="og:description" content="Türkiye genelinde farklı ölçeklerdeki işletmeler için gerçekleştirdiğimiz boylama hattı taşıma, bakım ve imalat projelerimizi inceleyin." />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://www.iltasmakine.com/projeler" />
+	<meta property="og:url" content="https://iltasmakine.com/projeler" />
 	<meta property="og:locale" content="tr_TR" />
 	<meta property="og:site_name" content="ILTAS" />
-	<meta property="og:image" content="https://www.iltasmakine.com/images/og-image.jpeg" />
+	<meta property="og:image" content="https://iltasmakine.com/images/og-image.jpeg" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:image" content="https://www.iltasmakine.com/images/og-image.jpeg" />
-	<link rel="canonical" href="https://www.iltasmakine.com/projeler" />
-	<link rel="alternate" hreflang="tr" href="https://www.iltasmakine.com/projeler" />
-	<link rel="alternate" hreflang="en" href="https://www.iltasmakine.com/en/projects" />
+	<meta name="twitter:image" content="https://iltasmakine.com/images/og-image.jpeg" />
+	<link rel="canonical" href="https://iltasmakine.com/projeler" />
+	<link rel="alternate" hreflang="tr" href="https://iltasmakine.com/projeler" />
+	<link rel="alternate" hreflang="en" href="https://iltasmakine.com/en/projects" />
 </svelte:head>
 
 <div class="flex flex-col min-h-full bg-[var(--iltas-bg)]">

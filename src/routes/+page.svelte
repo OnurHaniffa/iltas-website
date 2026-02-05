@@ -136,17 +136,17 @@
 	<meta property="og:title" content="ILTAS - Meyve & Sebze Boylama Sistemleri | Güvenilir Çözüm Ortağınız" />
 	<meta property="og:description" content="ILTAS, meyve ve sebze boylama hatlarında taşıma, bakım, revizyon ve yeni makine imalatı çözümleri sunar. 2020'den beri güvenilir çözüm ortağınız." />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://www.iltasmakine.com/" />
+	<meta property="og:url" content="https://iltasmakine.com/" />
 	<meta property="og:locale" content="tr_TR" />
 	<meta property="og:site_name" content="ILTAS" />
-	<meta property="og:image" content="https://www.iltasmakine.com/images/og-image.jpeg" />
+	<meta property="og:image" content="https://iltasmakine.com/images/og-image.jpeg" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:image" content="https://www.iltasmakine.com/images/og-image.jpeg" />
-	<link rel="canonical" href="https://www.iltasmakine.com/" />
-	<link rel="alternate" hreflang="tr" href="https://www.iltasmakine.com/" />
-	<link rel="alternate" hreflang="en" href="https://www.iltasmakine.com/en" />
+	<meta name="twitter:image" content="https://iltasmakine.com/images/og-image.jpeg" />
+	<link rel="canonical" href="https://iltasmakine.com/" />
+	<link rel="alternate" hreflang="tr" href="https://iltasmakine.com/" />
+	<link rel="alternate" hreflang="en" href="https://iltasmakine.com/en" />
 </svelte:head>
 
 <div class="flex flex-col min-h-full bg-[var(--iltas-bg)]">
